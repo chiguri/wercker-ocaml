@@ -1,0 +1,23 @@
+name: ocaml
+version: 0.0.1
+description: wercker box for OCaml/OPAM
+type: main
+platform: ubuntu@12.04
+packages:
+    - OCaml@4.02.3
+    - OPAM@1.2.2
+keywords:
+    - ocaml
+    - opam
+no-response-timeout: 60
+script: |
+    sudo add-apt-repository --yes ppa:avsm/ocaml42+opam12
+    sudo apt-get update -y
+    apt-get install -y ocaml opam
+    # opam initialization; this may be omitted.
+    opam init -y
+    eval `opam config env`
+    # ocaml version print
+    ocaml -version
+    echo "ocamlopt -version:"
+    ocamlopt -version
