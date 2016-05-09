@@ -11,6 +11,8 @@ keywords:
     - opam
 no-response-timeout: 60
 script: |
+    sudo apt-get update -y
+    sudo apt-get install software-properties-common python-software-properties
     sudo add-apt-repository --yes ppa:avsm/ocaml42+opam12
     sudo apt-get update -y
     apt-get install -y ocaml opam
