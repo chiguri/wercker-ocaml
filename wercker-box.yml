@@ -15,7 +15,7 @@ script: |
     sudo apt-get install software-properties-common python-software-properties
     sudo add-apt-repository --yes ppa:avsm/ocaml42+opam12
     sudo apt-get update -y
-    apt-get install -y ocaml opam
+    sudo apt-get install -y ocaml opam
     # opam initialization; this may be omitted.
     opam init -y
     eval `opam config env`
