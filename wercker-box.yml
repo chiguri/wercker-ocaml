@@ -18,6 +18,7 @@ script: |
     opam init -y
     eval `opam config env`
     # ocaml version print
+    echo "ocaml -version:"
     ocaml -version
     echo "ocamlopt -version:"
     ocamlopt -version
