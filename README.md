@@ -10,6 +10,10 @@ The MIT License (MIT)
 
 # Changelog
 
+## 0.0.3
+
+- Installing binutils
+
 ## 0.0.1
 
 - Initial release
